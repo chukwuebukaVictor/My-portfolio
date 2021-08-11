@@ -4,7 +4,8 @@
 
 > One paragraph statement about the project.
 
-![screenshot]()
+![screenshot](./img/mobile-skeleton.png
+)
 
 Additional description about the project and its features.
 
@@ -13,6 +14,9 @@ Additional description about the project and its features.
 - Html
 - Css
 
+## Live Demo
+
+[Live Demo Link](https://chukwuebukavictor.github.io/My-portfolio/)
 
 ## Getting Started
 
