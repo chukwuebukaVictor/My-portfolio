@@ -8,8 +8,6 @@ This project displays the mobile skeleton of my portfolio page. The was built wi
 ![screenshot](./img/mobile-skeleton.png
 )
 
-Additional description about the project and its features.
-
 ## Built With
 
 - Html
