@@ -9,16 +9,29 @@ body {
   background-color: #e5e5e5;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
 
-.about-container {
+.about-me {
   position: relative;
   background: #fff;
 
   /* height: 45rem; */
   border-radius: 0 0 0 5rem;
+}
+
+.about-me a {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  color: #7f8cff;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 1rem;
 }
 
 .about {
@@ -68,6 +81,7 @@ a {
 }
 
 .social-icons {
+  display: flex;
   padding: 1.5rem 1rem 9rem 1rem;
 }
 
