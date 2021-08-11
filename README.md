@@ -3,6 +3,7 @@
 # My-Portfolio
 
 > One paragraph statement about the project.
+This project displays the mobile skeleton of my portfolio page. The was built with Html, Css,Vscode,Git and Github. 
 
 ![screenshot](./img/mobile-skeleton.png
 )
@@ -45,6 +46,7 @@ To get a local copy up and running follow these simple example steps.
 ## Authors
 
 👤 **Author1**
+Chukwuebuka Victor ozoede
 
 - GitHub: [@chukwuebukaVictor](https://github.com/chukwuebukaVictor)
 - Twitter: [@OzoedeVictor](https://twitter.com/OzoedeVictor)
