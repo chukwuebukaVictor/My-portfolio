@@ -8,6 +8,7 @@ This project displays the mobile skeleton of my portfolio page. The was built wi
 ![screenshot](./img/mobile-skeleton.png
 )
 
+
 ## Built With
 
 - Html
@@ -60,13 +61,3 @@ Feel free to check the [issues page](https://github.com/chukwuebukaVictor/My-por
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
