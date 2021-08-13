@@ -3,10 +3,9 @@
 # My-Portfolio
 
 >
-This project displays the mobile skeleton of my portfolio page. The was built with Html, Css,Vscode,Git and Github. 
+This project displays the header and body of my portfolio mobile version page. The was built with Html, Css,Vscode,Git and Github. 
 
-![screenshot](./img/mobile-skeleton.png
-)
+![screenshot](./img/portfolio-body.png)
 
 
 ## Built With
@@ -39,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
     VS Code
 
 ### Usage
-    This is a simple project to dipslay my portfolio
+    This is a simple project to dipslay the header and footer of my portfolio mobile version page.
 
 
 ## Authors
