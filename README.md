@@ -5,7 +5,7 @@
 >
 This project displays the header and body of my portfolio mobile version page. The was built with Html, Css,Vscode,Git and Github. 
 
-![screenshot](./img/portfolio-body.png)
+![screenshot](./img/portfolio-footer.png)
 
 
 ## Built With

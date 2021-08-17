@@ -295,11 +295,11 @@ form {
   padding-left: 1rem;
 }
 
-.contact{
+.contact {
   background-color: #fff;
-  }
+}
 
-.contact-me{
+.contact-me {
   background: #6070ff url(img/footer.svg) 70% no-repeat;
   border-radius: 5rem 0 0 0;
   display: flex;
@@ -317,7 +317,7 @@ form {
   padding: 80px 0 15px 0;
 }
 
-.contact-me p{
+.contact-me p {
   font-size: 20px;
   font-weight: normal;
   line-height: 28px;
@@ -344,7 +344,6 @@ form {
 
 .btn-body-footer {
   font-family: "Poppins", sans-serif;
-  font-size: 17px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
