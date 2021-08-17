@@ -43,13 +43,17 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
-Chukwuebuka Victor Ozoede
+👤 **Chukwuebuka Victor Ozoede**
 
 - GitHub: [@chukwuebukaVictor](https://github.com/chukwuebukaVictor)
 - Twitter: [@OzoedeVictor](https://twitter.com/OzoedeVictor)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/chukwuebuka-ozoede-46616a219)
 
+👤 **Luís Fernando**
+
+- GitHub: [@lfmnovaes](https://github.com/lfmnovaes)
+- Twitter: [@lfmnovaes](https://twitter.com/lfmnovaes)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/lfmnovaes/)
 
 ## 🤝 Contributing
 
@@ -60,3 +64,7 @@ Feel free to check the [issues page](https://github.com/chukwuebukaVictor/My-por
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
