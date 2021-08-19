@@ -295,6 +295,9 @@ form {
   background-color: #fff;
 }
 
+.contact-me form{
+  margin: auto;
+}
 .contact-me {
   background: #6070ff url(img/footer.svg) 50% no-repeat;
   background-size: contain;
