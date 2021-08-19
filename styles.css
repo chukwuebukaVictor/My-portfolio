@@ -27,7 +27,7 @@ a {
 }
 
 .about-myself-top {
-  background:  #fff url(img/header-shapes-mobile.svg) 50% no-repeat;
+  background: #fff url(img/header-shapes-mobile.svg) 50% no-repeat;
   background-size: contain;
   padding: 1rem 0 0 0;
   height: 100%;
@@ -48,7 +48,7 @@ a {
   font-weight: 800;
   font-size: 1rem;
   text-transform: capitalize;
-  color:#6070ff;
+  color: #6070ff;
 }
 
 .intro h1 {
@@ -372,52 +372,86 @@ form {
   border: 1px solid #c1c7d0;
 }
 
-.menu-bar img{
+.menu-bar img {
   display: block;
 }
 
-.menu-bar ul{
+.menu-bar ul {
   display: none;
 }
 
-@media (min-width: 768px){
-  .menu-bar ul{
+@media (min-width: 768px) {
+  .menu-bar ul {
     text-transform: capitalize;
     display: block;
     display: flex;
     align-items: center;
     padding: 0 3rem;
   }
-  .menu-bar li{
+
+  .menu-bar li {
     padding: 0 0 0 1.5rem;
   }
 
-  .desktop-menu a{
+  .desktop-menu a {
     color: #6070ff;
-
   }
-  
-  .img-logo{
+
+  .img-logo {
     padding: 0 3rem;
   }
-  .menu-bar img{
+
+  .menu-bar img {
     display: none;
   }
-  .intro h1{
+
+  .intro h1 {
     margin: 0 5rem;
     width: 80%;
     word-spacing: 0.05rem;
   }
-  .intro p, .connect-header, .icons-header{
+
+  .intro p,
+  .connect-header,
+  .icons-header {
     margin: 0 5rem;
     word-spacing: 0.05rem;
     line-height: 2rem;
   }
 
   .about-myself-top {
-    background:  #fff url(img/desktop-header-bg.svg) 50% no-repeat;
-    background-size:contain;
+    background: #fff url(img/desktop-header-bg.svg) 50% no-repeat;
+    background-size: contain;
+  }
+  .work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    align-items: center;
   }
 
+  .img-work{
+    padding:1rem 1rem 1rem 1rem;
+    /* padding:0; */
+    width: 100%;
+  }
+
+  .body-content{
+    margin: 1rem;
+  }
+ 
+  .work-top{
+    margin: 0 1rem 1.5rem 1rem;
+ }
+ .work-top li{
+   padding:0 0.4rem 0 0;
+ }
+ .about-myself,
+ .work-one,
+ .img-work-three,
+ .img-work-one,
+ .work{
+   order: 1;
+ }
 }
-  
