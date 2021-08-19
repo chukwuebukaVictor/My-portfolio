@@ -403,5 +403,21 @@ form {
   .menu-bar img{
     display: none;
   }
+  .intro h1{
+    margin: 0 5rem;
+    width: 80%;
+    word-spacing: 0.05rem;
+  }
+  .intro p, .connect-header, .icons-header{
+    margin: 0 5rem;
+    word-spacing: 0.05rem;
+    line-height: 2rem;
+  }
+
+  .about-myself-top {
+    background:  #fff url(img/desktop-header-bg.svg) 50% no-repeat;
+    background-size:contain;
+  }
+
 }
   
