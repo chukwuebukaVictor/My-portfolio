@@ -518,5 +518,31 @@ display: flex;
 align-self: center;
 width: 70%;
 }
+.contact-me{
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background: #6070ff url(img/desk-footer-bg.svg) 50% no-repeat;
+  background-size: contain;
+
+}
+.contact form{
+  align-self: center;
+  width: 70%;
+  text-align: center;
+}
+
+.btn-body-footer{
+text-align: center;
+border-radius: 0;
+}
+.textfield{
+  margin-bottom: 0.5rem;
+  border-radius: 0;
+}
+.textarea{
+  border-radius: 0;
+}
+
 
 }
