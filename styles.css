@@ -257,7 +257,7 @@ form {
   font-style: normal;
   font-weight: 800;
   font-size: 1.2rem;
-  color:#172b4d;
+  color: #172b4d;
 }
 
 .framework,
@@ -295,9 +295,10 @@ form {
   background-color: #fff;
 }
 
-.contact-me form{
+.contact-me form {
   margin: auto;
 }
+
 .contact-me {
   background: #6070ff url(img/footer.svg) 50% no-repeat;
   background-size: contain;
@@ -367,6 +368,7 @@ form {
 .btn-body-footer:active {
   background: #2230d2;
 }
+
 .menu-bar img {
   display: block;
 }
@@ -379,7 +381,7 @@ form {
   display: none;
 }
 
-@media (min-width: 1100px){
+@media (min-width: 1100px) {
   .menu-bar ul {
     text-transform: capitalize;
     display: block;
@@ -454,21 +456,20 @@ form {
 
   .work-bottom2 {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     padding: 1rem 2rem 0 1rem;
     align-items: center;
-    
   }
-  .work-bottom-desk{
+
+  .work-bottom-desk {
     display: block;
     display: flex;
-    justify-content:left;
+    justify-content: left;
     padding: 1rem 2rem 0 1rem;
     align-items: center;
-
   }
 
-  .work-bottom-desk li{
+  .work-bottom-desk li {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -479,8 +480,8 @@ form {
     margin-right: 0.2rem;
     background-color: #ebebff;
     padding: 0 0.2rem;
-
   }
+
   .work-bottom2 li {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -539,7 +540,7 @@ form {
   .program-languages {
     display: flex;
   }
-  
+
   .contact-me p {
     align-self: center;
     width: 70%;
@@ -571,5 +572,4 @@ form {
   .textarea {
     border-radius: 0;
   }
-
 }
