@@ -5,7 +5,7 @@
 >
 This project displays the header and body of my portfolio mobile version page. The was built with Html, Css,Vscode,Git and Github. 
 
-![screenshot](./img/portfolio-footer.png)
+![screenshot](./img/desktop-screenshot.png)
 
 
 ## Built With
@@ -49,13 +49,13 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@OzoedeVictor](https://twitter.com/OzoedeVictor)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/chukwuebuka-ozoede-46616a219)
 
-👤 **Luís Fernando**
 
+## 🤝 Contributing
+
+👤 **Luís Fernando**
 - GitHub: [@lfmnovaes](https://github.com/lfmnovaes)
 - Twitter: [@lfmnovaes](https://twitter.com/lfmnovaes)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/lfmnovaes/)
-
-## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
