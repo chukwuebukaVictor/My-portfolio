@@ -27,12 +27,10 @@ a {
 }
 
 .about-myself-top {
-  background-image: url(img/header-shapes-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background:  #fff url(img/header-shapes-mobile.svg) 50% no-repeat;
+  background-size: contain;
   padding: 1rem 0 0 0;
   height: 100%;
-  background-color: #fff;
   border-radius: 0 0 0 5rem;
 }
 
@@ -50,6 +48,7 @@ a {
   font-weight: 800;
   font-size: 1rem;
   text-transform: capitalize;
+  color:#6070ff;
 }
 
 .intro h1 {
@@ -300,14 +299,15 @@ form {
 }
 
 .contact-me {
-  background: #6070ff url(img/footer.svg) 70% no-repeat;
+  background: #6070ff url(img/footer.svg) 50% no-repeat;
+  background-size: contain;
   border-radius: 5rem 0 0 0;
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   align-items: center;
   padding: 24px;
-  background-position-x: 138px;
+  background-position-x: 100%;
 }
 
 .contact-me h2 {
@@ -357,9 +357,11 @@ form {
   margin: 10px 0 2rem 0;
 }
 
-.btn-body-footer:hover {
+.btn:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border: 1px solid #fff;
+  color: white;
 }
 
 .btn-body-footer:active {
@@ -369,3 +371,37 @@ form {
 .btn-body-footer:disabled {
   border: 1px solid #c1c7d0;
 }
+
+.menu-bar img{
+  display: block;
+}
+
+.menu-bar ul{
+  display: none;
+}
+
+@media (min-width: 768px){
+  .menu-bar ul{
+    text-transform: capitalize;
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+  }
+  .menu-bar li{
+    padding: 0 0 0 1.5rem;
+  }
+
+  .desktop-menu a{
+    color: #6070ff;
+
+  }
+  
+  .img-logo{
+    padding: 0 3rem;
+  }
+  .menu-bar img{
+    display: none;
+  }
+}
+  
