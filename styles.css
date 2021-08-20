@@ -574,3 +574,68 @@ form {
   }
 }
  /* Animation ettect starts here */
+
+ .img-work:hover{
+  animation-name: image;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes image{
+  100%{width: 105%}
+}
+
+.btn {
+  transition: background-color 2s;
+}
+
+.img-logo{
+ animation-name: logo;
+ animation-duration: 3s;
+ transform: rotateZ(0deg);
+ animation-fill-mode: forwards;
+}
+
+@keyframes logo{
+ 0% {transform: rotateZ(0deg)}
+ 100%{transform: rotatez(360deg)}
+}
+.fab{
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  animation-name: icons;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}  
+@keyframes icons{
+  0% { opacity: 0.2}        
+  25% {opacity: 0.6; left:-80}
+  50%{opacity: 0.7; left: 160px}
+  75%{opacity: 0.8;left: -80px}
+  100%{opacity: 1;left: 0}
+}
+.intro p{
+  position: relative;
+  animation-name: content;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+.intro h1{
+  position: relative;
+  animation-name: header;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes content{
+  0% { left: -1000px}
+  100% { left: 0}
+}
+@keyframes header{
+  0% { top: -100px}
+  100% { top: 10px}
+}
