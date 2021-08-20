@@ -573,3 +573,69 @@ form {
     border-radius: 0;
   }
 }
+
+/* Animation ettect starts here */
+
+.img-work:hover {
+  animation-name: image;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes image {
+
+  100% { width: 105%; }
+}
+
+.img-logo {
+  animation-name: logo;
+  animation-duration: 3s;
+  transform: rotateZ(0deg);
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo {
+
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(360deg); }
+}
+
+.icons {
+  position: relative;
+  animation-name: icons;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes icons {
+
+  0% { left: -50px; }
+  25% { left: 100px; }
+  50% { left: -50px; }
+  100% { left: 0; }
+}
+
+.animation-p {
+  position: relative;
+  animation-name: content;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+.animation-h1 {
+  position: relative;
+  animation-name: header;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes content {
+  0% { left: -1000px; }
+  100% { left: 0; }
+}
+
+@keyframes header {
+  0% { top: -100px; }
+  100% { top: 10px; }
+}
