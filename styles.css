@@ -584,11 +584,8 @@ form {
 }
 
 @keyframes image {
-  100% { width: 105%; }
-}
 
-.btn {
-  transition: background-color 2s;
+  100% { width: 105%; }
 }
 
 .img-logo {
@@ -599,37 +596,34 @@ form {
 }
 
 @keyframes logo {
+
   0% { transform: rotateZ(0deg); }
   100% { transform: rotateZ(360deg); }
 }
 
-.fab {
-  display: inline-block;
+.icons {
   position: relative;
-  opacity: 0;
   animation-name: icons;
   animation-duration: 3s;
-  animation-delay: 1s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
 }
 
 @keyframes icons {
-  0% { opacity: 0.2; }
-  25% { opacity: 0.6; left: -80; }
-  50% { opacity: 0.7; left: 160px; }
-  75% { opacity: 0.8; left: -80px; }
-  100% { opacity: 1; left: 0; }
+
+  0% { left: -50px; }
+  25% { left: 100px; }
+  50% { left: -50px; }
+  100% { left: 0; }
 }
 
-.intro p {
+.animation-p {
   position: relative;
   animation-name: content;
   animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
-.intro h1 {
+.animation-h1 {
   position: relative;
   animation-name: header;
   animation-duration: 5s;
