@@ -573,4 +573,20 @@ form {
     border-radius: 0;
   }
 }
- /* Animation ettect starts here */
+
+/* Animation ettect starts here */
+
+.img-work:hover{
+  animation-name: image;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes image{
+  100%{width: 50rem}
+}
+
+.btn {
+  transition: background-color 2s;
+}
