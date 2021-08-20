@@ -610,13 +610,13 @@ form {
 
 @keyframes icons {
 
-  0% { left: -50px}
-  25% { left: 100px}
+  0% { left: -50px; }
+  25% { left: 100px; }
   50% { left: -50px; }
   100% { left: 0; }
 }
 
-.animation-p{
+.animation-p {
   position: relative;
   animation-name: content;
   animation-duration: 5s;
