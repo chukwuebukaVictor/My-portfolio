@@ -623,19 +623,19 @@ form {
   animation-fill-mode: forwards;
 }
 
-.animation-h1 {
+@keyframes content {
+  0% { left: -1000px; }
+  100% { left: 0; }
+}
+
+.animation-h {
   position: relative;
   animation-name: header;
   animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
-@keyframes content {
-  0% { left: -1000px; }
-  100% { left: 0; }
-}
-
 @keyframes header {
   0% { top: -100px; }
-  100% { top: 10px; }
+  100% { top: 8px; }
 }
