@@ -46,7 +46,7 @@ a {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-transform: capitalize;
   color: #6070ff;
 }
@@ -64,9 +64,9 @@ a {
 .intro p {
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #344563;
-  padding: 0 1rem 1rem 1rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
 }
 
 .connect {
@@ -74,7 +74,7 @@ a {
   font-weight: 600;
   color: #7f8cff;
   padding: 0  1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
@@ -85,12 +85,11 @@ a {
 
 .social-icons li a {
   margin-right: 2rem;
-  font-size: larger;
-  color: #505f79;
+  color: #091e42;
 }
 
 .fab {
-  font-size: x-large;
+  font-size: 1.8rem;
 }
 
 /* main start here */
@@ -165,7 +164,7 @@ main {
   line-height: 1.6rem;
   color: #344563;
   margin: 0.5rem 1rem 0.5rem 0.9rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .work-bottom {
@@ -177,9 +176,9 @@ main {
 .work-bottom li {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bolder;
   font-size: 1rem;
-  color: #6070ff;
+  color: #091e42;
   border: 1px solid #dadbff;
   border-radius: 0.5rem;
   padding: 0 0.2rem;
@@ -190,9 +189,9 @@ main {
 .btn-body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bolder;
   font-size: 1rem;
-  color: #396df2;
+  color: #091e42;
   margin: 1rem 0 2rem 1rem;
   text-transform: capitalize;
   padding: 0.4rem 0.5rem;
@@ -226,7 +225,7 @@ form {
   font-family: "Poppins", sans-serif;
   font-family: normal;
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 2rem;
   color: #172b4d;
   padding: 1rem 1rem 2rem 1rem;
@@ -311,7 +310,7 @@ form {
   background-position-x: 100%;
 }
 
-.contact-me h2 {
+.contact-me h3 {
   font-weight: bold;
   font-size: 40px;
   color: #fff;
@@ -360,7 +359,7 @@ form {
 
 .btn:hover {
   background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(238, 238, 240, 0.24);
   border: 1px solid #fff;
   color: white;
 }
@@ -472,9 +471,9 @@ form {
   .work-bottom-desk li {
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-weight: 200;
+    font-weight: bolder;
     font-size: 0.85rem;
-    color: #6070ff;
+    color: #091e42;
     border: 1px solid #dadbff;
     border-radius: 0.5rem;
     margin-right: 0.2rem;
@@ -485,9 +484,9 @@ form {
   .work-bottom2 li {
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-weight: 200;
+    font-weight: bolder;
     font-size: 0.85rem;
-    color: #6070ff;
+    color: #091e42;
     border: 1px solid #dadbff;
     border-radius: 0.5rem;
     margin-right: 0.2rem;
