@@ -3,8 +3,6 @@ const ham = document.querySelector('.ham');
 const xIcon = document.querySelector('.xIcon');
 const menuIcon = document.querySelector('.menuIcon');
 
-ham.addEventListener('click', toggleMenu);
-
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
@@ -17,7 +15,9 @@ function toggleMenu() {
   }
 }
 
-let menuLinks = document.querySelectorAll('.mobileLink');
+ham.addEventListener('click', toggleMenu);
+
+const menuLinks = document.querySelectorAll('.mobileLink');
 
 menuLinks.forEach(
   (mobileLink) => {
