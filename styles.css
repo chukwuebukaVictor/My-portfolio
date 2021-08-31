@@ -44,6 +44,7 @@ a {
   background: #fff;
   width: 100%;
   height: 50px;
+  opacity: 0.96;
   z-index: 1;
 }
 
@@ -65,23 +66,23 @@ a {
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 75%;
+  left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 8rem;
-  background: white;
-  color: black;
+  height: 100vh;
+  background: #6070ff;
   transform: translateY(-150%);
   transition: transform 0.2s;
   list-style: none;
-  padding-top: 3rem;
+  padding: 6rem 2rem;
 }
 
 .mobile-menu a {
-  font-size: medium;
-  font-weight: bold;
-  z-index: 100;
+  font-weight: 800;
+  color: white;
+  font-size: 2rem;
+  line-height: 4rem;
 }
 
 .desktop-menu {
@@ -96,7 +97,7 @@ a {
   width: 3rem;
   height: 1.5rem;
   border: 0;
-  background: white;
+  background: none;
   cursor: pointer;
 }
 
