@@ -1,9 +1,9 @@
-var menu = document.querySelector('.mobile-menu')
-var ham = document.querySelector('.ham')
-var xIcon = document.querySelector('.xIcon')
-var menuIcon = document.querySelector('.menuIcon')
+let menu = document.querySelector('.mobile-menu');
+let ham = document.querySelector('.ham');
+let xIcon = document.querySelector('.xIcon');
+let menuIcon = document.querySelector('.menuIcon');
 
-ham.addEventListener('lick', toggleMenu)
+ham.addEventListener('lick', toggleMenu);
 
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
@@ -21,6 +21,6 @@ var menuLinks = document.querySelectorAll(".mobileLink")
 
 menuLinks.forEach(
   function (mobileLink) {
-    mobileLink.addEventListener("click", toggleMenu)
-  }
+    mobileLink.addEventListener('click', toggleMenu)
+  },
 )
