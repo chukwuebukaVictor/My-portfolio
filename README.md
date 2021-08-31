@@ -5,7 +5,7 @@
 >
 This project displays the header and body of my portfolio mobile version page. The was built with Html, Css,Java script,Vscode,Git and Github. 
 
-![screenshot](./img/mobile-toggle.png)
+![screenshot](./img/mobile.menu.png)
 
 
 ## Built With
