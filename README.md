@@ -3,15 +3,16 @@
 # My-Portfolio
 
 >
-This project displays the header and body of my portfolio mobile version page. The was built with Html, Css,Vscode,Git and Github. 
+This project displays the header and body of my portfolio mobile version page. The was built with Html, Css,Java script,Vscode,Git and Github. 
 
-![screenshot](./img/desktop-screenshot.png)
+![screenshot](./img/mobile-menu.png)
 
 
 ## Built With
 
 - Html
 - Css
+- Java Script
 
 ## Live Demo
 
