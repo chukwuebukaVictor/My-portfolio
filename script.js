@@ -40,56 +40,56 @@ const span4 = document.getElementsByClassName('close4')[0];
 
 btn1.onclick = function span1() {
   modal1.style.display = 'block';
-}
+};
 
 span1.onclick = function span1() {
   modal1.style.display = 'none';
-}
+};
 
 window.onclick = function modal1(event) {
   if (event.target === modal1) {
     modal1.style.display = 'none';
   }
-}
+};
 
 btn2.onclick = function span2() {
   modal2.style.display = 'block';
-}
+};
 
 span2.onclick = function span2() {
   modal2.style.display = 'none';
-}
+};
 
 window.onclick = function modal2(event) {
   if (event.target === modal2) {
     modal2.style.display = 'none';
   }
-}
+};
 
 btn3.onclick = function span3() {
   modal3.style.display = 'block';
-}
+};
 
 span3.onclick = function span3() {
   modal3.style.display = 'none';
-}
+};
 
 window.onclick = function modal3(event) {
   if (event.target === modal3) {
     modal3.style.display = 'none';
   }
-}
+};
 
 btn4.onclick = function span4() {
   modal4.style.display = 'block';
-}
+};
 
 span4.onclick = function span4() {
   modal4.style.display = 'none';
-}
+};
 
 window.onclick = function modal(event) {
   if (event.target === modal4) {
     modal4.style.display = 'none';
   }
-}
+};
