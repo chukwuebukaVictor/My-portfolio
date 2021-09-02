@@ -1,95 +1,203 @@
-const menu = document.querySelector('.mobile-menu');
+const menu = document.querySelector('.menu');
 const ham = document.querySelector('.ham');
 const xIcon = document.querySelector('.xIcon');
 const menuIcon = document.querySelector('.menuIcon');
+const main = document.querySelector('.main');
+const logo = document.querySelector('.bold');
+const header = document.getElementById('logo');
+const projs = document.querySelectorAll('.work');
+
+function projOn() {
+  projs.forEach(
+    (proj) => {
+      proj.style.filter = 'blur(4px)';
+    },
+  );
+}
+
+function projOff() {
+  projs.forEach(
+    (proj) => {
+      proj.style.filter = 'blur(0px)';
+    },
+  );
+}
 
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
     xIcon.style.display = 'none';
     menuIcon.style.display = 'block';
+    main.style.filter = 'blur(0px)';
+    logo.style.filter = 'blur(0px)';
+    projOff();
   } else {
     menu.classList.add('showMenu');
     xIcon.style.display = 'block';
     menuIcon.style.display = 'none';
+    main.style.filter = 'blur(4px)';
+    logo.style.filter = 'blur(4px)';
+    projOn();
   }
 }
 
 ham.addEventListener('click', toggleMenu);
 
-const menuLinks = document.querySelectorAll('.mobileLink');
-
-menuLinks.forEach(
-  (mobileLink) => {
-    mobileLink.addEventListener('click', toggleMenu);
+document.querySelectorAll('.menuLink').forEach(
+  (menuLink) => {
+    menuLink.addEventListener('click', toggleMenu);
   },
 );
-
-const modal1 = document.getElementById('myModal1');
-const modal2 = document.getElementById('myModal2');
-const modal3 = document.getElementById('myModal3');
-const modal4 = document.getElementById('myModal4');
-const btn1 = document.getElementById('myBtn1');
-const btn2 = document.getElementById('myBtn2');
-const btn3 = document.getElementById('myBtn3');
-const btn4 = document.getElementById('myBtn4');
-const span1 = document.getElementsByClassName('close1')[0];
-const span2 = document.getElementsByClassName('close2')[0];
-const span3 = document.getElementsByClassName('close3')[0];
-const span4 = document.getElementsByClassName('close4')[0];
-
-btn1.onclick = function span1() {
-  modal1.style.display = 'block';
+const modalObj = {
+  modal1: {
+    title: 'Tonic',
+    subt: ['CANOPY', 'Back End Dev', '2015'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    img: 'img/Portfolio1-big.svg',
+    tech: ['html', 'css', 'javaScript'],
+    live: 'https://chukwuebukavictor.github.io/My-portfolio/',
+    source: 'https://github.com/chukwuebukaVictor/My-portfolio',
+  },
+  modal2: {
+    title: 'Multi-Post Stories',
+    subt: ['CANOPY', 'Back End Dev', '2015'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    img: 'img/Portfolio2-big.svg',
+    tech: ['html', 'css', 'javaScript'],
+    live: 'https://chukwuebukavictor.github.io/My-portfolio/',
+    source: 'https://github.com/chukwuebukaVictor/My-portfolio',
+  },
+  modal3: {
+    title: 'Tonic',
+    subt: ['CANOPY', 'Back End Dev', '2015'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    img: 'img/Portfolio3.svg',
+    tech: ['html', 'css', 'javaScript'],
+    live: 'https://chukwuebukavictor.github.io/My-portfolio/',
+    source: 'https://github.com/chukwuebukaVictor/My-portfolio',
+  },
+  modal4: {
+    title: 'Multi-Post Stories',
+    subt: ['CANOPY', 'Back End Dev', '2015'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    img: 'img/Portfolio4-big.svg',
+    tech: ['html', 'css', 'javaScript'],
+    live: 'https://chukwuebukavictor.github.io/My-portfolio/',
+    source: 'https://github.com/chukwuebukaVictor/My-portfolio',
+  },
 };
 
-span1.onclick = function span1() {
-  modal1.style.display = 'none';
+const modalSubt = document.getElementById('modalSubt');
+const modalTech = document.getElementById('modalTech');
+
+function addCounter() {
+  const counter = document.createElement('img');
+  counter.src = 'img/Counter.svg';
+  counter.alt = 'counter';
+  modalSubt.appendChild(counter);
+}
+
+function addSubt(modal) {
+  const firstDiv = document.createElement('div');
+  firstDiv.className = 'font500 black font18-24';
+  modalSubt.appendChild(firstDiv);
+  [firstDiv.innerHTML] = modalObj[modal].subt;
+  modalObj[modal].subt.slice(1).forEach((i) => {
+    addCounter();
+    const otherDiv = document.createElement('div');
+    otherDiv.className = 'gray font18-24';
+    modalSubt.appendChild(otherDiv);
+    otherDiv.innerHTML = i;
+  });
+}
+
+function addTechs(modal) {
+  modalObj[modal].tech.forEach((i) => {
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(i));
+    modalTech.appendChild(li);
+    console.log(modalTech)
+  });
+}
+
+function clearModal() {
+  modalTech.innerHTML = '';
+  modalSubt.innerHTML = '';
+}
+
+function popModal(modal) {
+  document.getElementById('modalTitle').textContent = modalObj[modal].title;
+  addSubt(modal);
+  document.getElementById('modalDesc').textContent = modalObj[modal].desc;
+  addTechs(modal);
+  document.getElementById('modalImg').src = modalObj[modal].img;
+  document.getElementById('modalBtn1').setAttribute('onClick', `location.href='${modalObj[modal].live}';`);
+  document.getElementById('modalBtn2').setAttribute('onClick', `location.href='${modalObj[modal].source}';`);
+}
+
+const modal = document.getElementById('myModal');
+const mBtn1 = document.getElementById('myBtn1');
+const mBtn2 = document.getElementById('myBtn2');
+const mBtn3 = document.getElementById('myBtn3');
+const mBtn4 = document.getElementById('myBtn4');
+const xp = document.getElementsByClassName('xp')[0];
+
+mBtn1.onclick = function seeP1() {
+  popModal('modal1');
+  modal.style.display = 'block';
+  main.style.filter = 'blur(4px)';
+  header.style.filter = 'blur(4px)';
+  projOn();
 };
 
-window.onclick = function modal1(event) {
-  if (event.target === modal1) {
-    modal1.style.display = 'none';
+mBtn2.onclick = function seeP2() {
+  popModal('modal2');
+  modal.style.display = 'block';
+  main.style.filter = 'blur(4px)';
+  header.style.filter = 'blur(4px)';
+  projOn();
+};
+
+mBtn3.onclick = function seeP3() {
+  popModal('modal3');
+  modal.style.display = 'block';
+  main.style.filter = 'blur(4px)';
+  header.style.filter = 'blur(4px)';
+  projOn();
+};
+
+mBtn4.onclick = function seeP4() {
+  popModal('modal4');
+  modal.style.display = 'block';
+  main.style.filter = 'blur(4px)';
+  header.style.filter = 'blur(4px)';
+  projOn();
+};
+
+function closeModal() {
+  modal.style.display = 'none';
+  main.style.filter = 'blur(0px)';
+  header.style.filter = 'blur(0px)';
+  projOff();
+}
+
+xp.onclick = function x() {
+  closeModal();
+  clearModal();
+};
+
+window.onclick = function clickOut(event) {
+  if (event.target === modal) {
+    closeModal();
+    clearModal();
   }
 };
 
-btn2.onclick = function span2() {
-  modal2.style.display = 'block';
-};
+// const usrEmail = document.getElementById('usremail');
+// function haveUpper(str) { return /[A-Z]/.test(str); }
 
-span2.onclick = function span2() {
-  modal2.style.display = 'none';
-};
 
-window.onclick = function modal2(event) {
-  if (event.target === modal2) {
-    modal2.style.display = 'none';
-  }
-};
-
-btn3.onclick = function span3() {
-  modal3.style.display = 'block';
-};
-
-span3.onclick = function span3() {
-  modal3.style.display = 'none';
-};
-
-window.onclick = function modal3(event) {
-  if (event.target === modal3) {
-    modal3.style.display = 'none';
-  }
-};
-
-btn4.onclick = function span4() {
-  modal4.style.display = 'block';
-};
-
-span4.onclick = function span4() {
-  modal4.style.display = 'none';
-};
-
-window.onclick = function modal(event) {
-  if (event.target === modal4) {
-    modal4.style.display = 'none';
-  }
-};
+// const usrBtn = document.getElementById('usrbtn');
+// usrBtn.onclick = function clickBtn (){
+//   alert(haveUpper(usrEmail.innerText));
+// }
