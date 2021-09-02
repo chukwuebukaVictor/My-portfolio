@@ -116,7 +116,6 @@ function addTechs(modal) {
     const li = document.createElement('li');
     li.appendChild(document.createTextNode(i));
     modalTech.appendChild(li);
-    console.log(modalTech)
   });
 }
 
@@ -192,12 +191,3 @@ window.onclick = function clickOut(event) {
     clearModal();
   }
 };
-
-// const usrEmail = document.getElementById('usremail');
-// function haveUpper(str) { return /[A-Z]/.test(str); }
-
-
-// const usrBtn = document.getElementById('usrbtn');
-// usrBtn.onclick = function clickBtn (){
-//   alert(haveUpper(usrEmail.innerText));
-// }
