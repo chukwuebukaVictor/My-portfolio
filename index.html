@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRZX422MDS"></script>
 <script>
@@ -14,37 +15,38 @@
 	<script src="https://kit.fontawesome.com/e98a0f000a.js" crossorigin="anonymous"></script>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victor's Portfolio Page</title>
-</head>
+  </head>
   <body>
-    <header class="menu-bar">
-      <a class="img-logo" href="#">my logo</a>
+    <header class="header">
+      <nav class="menu-bar">
+      <a class="img-logo bold " id="logo" href="#">my logo</a>
       <ul class="desktop-menu">
         <li><a href="#">portfolio</a></li>
         <li><a href="#">about</a></li>
         <li><a href="#">contact</a></li>
       </ul>
-      <button class="ham" type="button">
-        <span class="menuIcon">
-          <img src="./img/menuIcon.svg" alt="menu-icon">
-      </span>
-      <span class="xIcon">
-        <img src="./img/icon-X.svg" alt="menu-icon">
-      </span>
-    </button>
-      <ul class="mobile-menu">
-        <li><a class="mobileLink" href="#">Portfolio</a></li>
-        <li><a class="mobileLink" href="#">About</a></li>
-        <li><a class="mobileLink" href="#">Contact</a></li>
-      </ul>
-
+        <ul class="menu blue">
+          <li><a class="menuLink" href="#">Portfolio</a></li>
+          <li><a class="menuLink" href="#about">About</a></li>
+          <li><a class="menuLink" href="#contact">Contact</a></li>
+        </ul>
+        <button class="ham" type="button">
+          <span class="menuIcon">
+            menu
+          </span>
+          <span class="xIcon blue">
+            close
+          </span>
+        </button>
+      </nav>
     </header>
 
-    <section class="about-myself-top">
+    <section class="about-myself-top main">
       <div class="intro">
         <h1 class="animation-h">I’m Victor Ozoede Glad to see you!</h1>
         <p class=animation-p>I’m a software developer! I can help you build a product , feature or website Look through   some of my work and experience! If you like what you see and have a project you need coded, don’t   hestiate to contact me.</p>
@@ -59,12 +61,12 @@
       </ul>  
     </section> 
     
-    <main class="grid">
+    <main class="grid main"> 
       <!-- First section starts -->
       <section class="work-one work">
         <img class ="img-work img-work-one" src="img/Portfolio1.svg" alt="Facebook 360">
           <div class="body-content">
-          <h2>Facebook 360</h2>
+          <h2 class="bold">Facebook 360</h2>
             <ul class="work-top">
               <li class="canopy">CANOPY</li>
               <li><img class="counter" src="img/Counter.svg" alt="counter"></li>
@@ -86,17 +88,45 @@
               <li>css</li>
               <li>javascript</li>
             </ul>
-            <form action="#">
-                <button class="btn-body btn" type="submit" name="submit">see project</button>
-            </form>
-        </div>
+            <button class="btn-body btn" id="myBtn1" type="button" name="submit">see project</button>
+          </div>
       </section>
+      <div id="myModal" class="modal">
+        <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal-title">
+              <div class="flex">
+                <h1 id="modalTitle">Title</h1>
+
+                <span class="xp">&times;</span>
+                </div>
+
+              <div id="modalSubt" class="modal-nav dev"></div>
+                <img id="modalImg" class="modal-img" src="img/Portfolio1-big.svg" alt="Tonic">
+
+            </div>
+            <div class="modal-text toggle-body">
+            
+              <p id="modalDesc" class="toggle-p"></p>
+              
+            
+              <div class="modal-footer">
+                <ul id="modalTech" class="toggle-list-top li"></ul>
+                <div class="btn-modal">
+                <button id="modalBtn1" type="button" class="btn-toggle">See Live &nbsp; <img class="icon" src="/img/liveIcon.svg" alt="Live"></button>
+                <button id="modalBtn2" type="button" class="btn-toggle">See Source &nbsp; <img class="icon" src="/img/sourceIcon.svg" alt="Source"></button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- First section ends -->
       <!-- Second section starts -->
       <section class="work-two work">
           <img class ="img-work img-work-two" src="img/Portfolio2.svg" alt="Uber Navigation">
           <div class="body-content">
-            <h2>Uber Navigation</h2>
+            <h2 class="bold">Uber Navigation</h2>
             <ul class="work-top">
               <li class="canopy">CANOPY</li>
               <li><img class="counter" src="img/Counter.svg" alt="counter"></li>
@@ -118,9 +148,7 @@
                 <li>css</li>
                 <li>javascript</li>
               </ul>
-            <form action="#">
-                <button class="btn-body btn" type="submit" name="submit">see project</button>
-            </form>
+              <button class="btn-body btn" id="myBtn2" type="button" name="submit">see project</button>
           </div>
       </section>
       <!-- Second Section ends -->
@@ -128,7 +156,7 @@
       <section class="work-three work">
           <img class ="img-work img-work-three" src="img/Portfolio3.svg" alt="Tonic">
         <div class="body-content">   
-          <h2>Tonic</h2>
+          <h2 class="bold">Tonic</h2>
             <ul class="work-top">
               <li class="canopy">CANOPY</li>
               <li><img class="counter" src="img/Counter.svg" alt="counter"></li>
@@ -144,17 +172,21 @@
                 <li>css</li>
                 <li>javaScript</li>
               </ul>
-            <form action="#">
-                <button class="btn-body btn" type="submit" name="submit">see project</button>
-            </form>
-          </div>
-      </section>
+              <ul class="work-bottom2">
+                <li>html</li>
+                <li>Ruby on rails</li>
+                <li>css</li>
+                <li>javascript</li>
+              </ul>
+              <button class="btn-body btn" id="myBtn3" type="button" name="submit">see project</button>
+            </div>
+        </section>
       <!-- Third section ends -->
       <!-- Fourth section starts -->
       <section class="work-four work">
           <img class ="img-work img-work-four" src="img/Portfolio4.svg" alt="Multi post stories">
           <div class="body-content">
-            <h2>Multi-Post Stories</h2>
+            <h2 class="bold">Multi-Post Stories</h2>
             <ul class="work-top">
               <li class="canopy">CANOPY</li>
               <li><img class="counter" src="img/Counter.svg" alt="counter"></li>
@@ -174,18 +206,16 @@
                   <li>html</li>
                   <li>Ruby on rails</li>
                   <li>css</li>
-                  <li class="js">javascript</li>
+                  <li>javascript</li>
                 </ul>
-            <form action="#">
-                <button class="btn-body btn" type="submit" name="submit">see project</button>
-            </form>
-          </div>
-      </section>
+                <button class="btn-body btn" id="myBtn4" type="button" name="submit">see project</button>
+            </div>
+          </section>
       <!-- Fourth section ends -->
       <!-- Body introduction section starts -->
       <section class="about-myself">
         <div class="flex-item1 flex-item">
-          <h1 class="myself-header">about myself</h1>
+          <h1 class="myself-header bold">about myself</h1>
           <p class="myself-paragraph">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me. </p>
           <a class="connect" href="#">let's connect</a>
           <nav class="icon-body">
@@ -234,8 +264,8 @@
     </main>
     <footer class="contact">
       <section class="contact-me">
-        <h3>Contact me</h3>
-        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+        <h3 class="bold">Contact me</h3>
+        <p class="bold">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         <form action="https://formspree.io/f/xdoypdnq" method="POST">
           <input type="text" class="textfield" name="user_name" maxlength="30" required placeholder="Enter your name">
           <input type="email" class="textfield" name="user_email" placeholder="example@gmail.com" required>
@@ -246,4 +276,4 @@
     </footer>
     <script src="script.js"></script>
   </body>
-</html>
+</html> 
