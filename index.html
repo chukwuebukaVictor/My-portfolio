@@ -61,10 +61,14 @@
     
     <main class="grid" id="portfolio">
       <!-- First section starts -->
-      <section class="work-one work">
+      
+      <section class="work-one work modal-content">
+        <div class="content">
+          <span class="close">&times;</span>
         <img class ="img-work img-work-one" src="img/Portfolio1.svg" alt="Facebook 360">
+      </div>
           <div class="body-content">
-          <h2>Facebook 360</h2>
+           <h2>Facebook 360</h2>
             <ul class="work-top">
               <li class="canopy">CANOPY</li>
               <li><img class="counter" src="img/Counter.svg" alt="counter"></li>
@@ -86,10 +90,9 @@
               <li>css</li>
               <li>javascript</li>
             </ul>
-            <form action="#">
-                <button class="btn-body btn" type="submit" name="submit">see project</button>
-            </form>
-        </div>
+            <button class="btn-body btn" id="myBtn1" type="button" name="submit">see project</button>
+          
+          </div>
       </section>
       <!-- First section ends -->
       <!-- Second section starts -->
@@ -118,9 +121,7 @@
                 <li>css</li>
                 <li>javascript</li>
               </ul>
-            <form action="#">
-                <button class="btn-body btn" type="submit" name="submit">see project</button>
-            </form>
+              <button class="btn-body btn" id="myBtn2" type="button" name="submit">see project</button>
           </div>
       </section>
       <!-- Second Section ends -->
@@ -144,11 +145,15 @@
                 <li>css</li>
                 <li>javaScript</li>
               </ul>
-            <form action="#">
-                <button class="btn-body btn" type="submit" name="submit">see project</button>
-            </form>
+              <ul class="work-bottom2">
+                <li>html</li>
+                <li>Ruby on rails</li>
+                <li>css</li>
+                <li>javascript</li>
+              </ul>
+              <button class="btn-body btn" id="myBtn3" type="button" name="submit">see project</button>
           </div>
-      </section>
+        </section>
       <!-- Third section ends -->
       <!-- Fourth section starts -->
       <section class="work-four work">
@@ -174,13 +179,11 @@
                   <li>html</li>
                   <li>Ruby on rails</li>
                   <li>css</li>
-                  <li class="js">javascript</li>
+                  <li>javascript</li>
                 </ul>
-            <form action="#">
-                <button class="btn-body btn" type="submit" name="submit">see project</button>
-            </form>
-          </div>
-      </section>
+                <button class="btn-body btn" id="myBtn4" type="button" name="submit">see project</button>
+              </div>
+          </section>
       <!-- Fourth section ends -->
       <!-- Body introduction section starts -->
       <section class="about-myself" id="about">

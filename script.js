@@ -2,7 +2,6 @@ const menu = document.querySelector('.mobile-menu');
 const ham = document.querySelector('.ham');
 const xIcon = document.querySelector('.xIcon');
 const menuIcon = document.querySelector('.menuIcon');
-
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
