@@ -443,7 +443,6 @@ form {
 }
 
 .modal-title {
-  grid-area: header;
   display: flex;
   flex-direction: column;
 }
