@@ -481,14 +481,6 @@ form {
   display: none;
 }
 
-.close1,
-.close2,
-.close3,
-.close4 {
-  font-size: 2rem;
-  font-weight: normal;
-}
-
 .toggle-list-top li,
 .toggle-list-bottom li {
   font-family: "Poppins", sans-serif;
@@ -498,7 +490,7 @@ form {
   color: #949eff;
   border: 1px solid #dadbff;
   border-radius: 0.5rem;
-  padding: 0 0.2rem;
+  padding: 0 0.3rem;
   margin: 1rem 0.3rem 0 0;
   background-color: #ebebff;
 }
@@ -507,13 +499,45 @@ form {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bolder;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #7f8cff;
   text-transform: capitalize;
-  padding: 0.2rem 0.2rem;
   border-radius: 0.5rem;
   background-color: #f7f7f9;
-  margin: 1rem 0 0 0;
+  margin: 2rem 0 0 0;
+  width: 12rem;
+}
+
+.dflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-nav {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.black {
+  color: #344563;
+  padding: 0 0.7rem;
+  font-weight: 800;
+}
+
+.gray {
+  color: #7a869a;
+  padding: 0 1rem;
+}
+
+#modalTitle {
+  padding-left: 1.2rem;
+}
+
+.xp {
+  font-weight: 900;
+  font-size: larger;
 }
 
 @media (min-width: 1100px) {
@@ -523,7 +547,7 @@ form {
     height: 2rem;
   }
 
-  .toggle-nav form {
+  .btn-modal {
     display: flex;
     justify-content: space-between;
     width: 17rem;
