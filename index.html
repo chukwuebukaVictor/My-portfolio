@@ -22,7 +22,7 @@
 </head>
   <body>
     <header class="menu-bar">
-      <a class="img-logo" href="#">my logo</a>
+      <a class="img-logo" id="logo" href="#">my logo</a>
       <ul class="desktop-menu">
         <li><a href="#">portfolio</a></li>
         <li><a href="#">about</a></li>
@@ -44,7 +44,7 @@
 
     </header>
 
-    <section class="about-myself-top">
+    <section class="about-myself-top main">
       <div class="intro">
         <h1 class="animation-h">I’m Victor Ozoede Glad to see you!</h1>
         <p class=animation-p>I’m a software developer! I can help you build a product , feature or website Look through   some of my work and experience! If you like what you see and have a project you need coded, don’t   hestiate to contact me.</p>
@@ -59,12 +59,12 @@
       </ul>  
     </section> 
     
-    <main class="grid" id="portfolio">
+    <main class="grid main" id="portfolio">
       <!-- First section starts -->
       
-      <section class="work-one work modal-content">
+      <section class="work-one work">
         <div class="content">
-          <span class="close">&times;</span>
+          <!-- <span class="close">&times;</span> -->
         <img class ="img-work img-work-one" src="img/Portfolio1.svg" alt="Facebook 360">
       </div>
           <div class="body-content">
@@ -95,6 +95,36 @@
           </div>
       </section>
       <!-- First section ends -->
+      <div id="myModal" class="modal">
+        <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal-title">
+              <div class="dflex">
+                <h1 id="modalTitle">Title</h1>
+
+                <span class="xp">&times;</span>
+                </div>
+
+              <div id="modalSubt" class="modal-nav dev"></div>
+                <img id="modalImg" class="modal-img" src="img/Portfolio1-big.svg" alt="Tonic">
+
+            </div>
+            <div class="modal-text toggle-body">
+            
+              <p id="modalDesc" class="toggle-p"></p>
+              
+            
+              <div class="modal-footer">
+                <ul id="modalTech" class="toggle-list-top li"></ul>
+                <div class="btn-modal">
+                <button id="modalBtn1" type="button" class="btn-toggle">See Live &nbsp; <img class="icon" src="/img/liveIcon.svg" alt="Live"></button>
+                <button id="modalBtn2" type="button" class="btn-toggle">See Source &nbsp; <img class="icon" src="/img/sourceIcon.svg" alt="Source"></button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Second section starts -->
       <section class="work-two work">
           <img class ="img-work img-work-two" src="img/Portfolio2.svg" alt="Uber Navigation">
