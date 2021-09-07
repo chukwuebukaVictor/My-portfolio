@@ -516,6 +516,26 @@ form {
   margin: 1rem 0 0 0;
 }
 
+<<<<<<< HEAD
+=======
+.dflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#modalSubt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.xp {
+  font-weight: bold;
+}
+
+>>>>>>> 899d3a3910285777fa5db7546a4881dd7f9af633
 @media (min-width: 1100px) {
   .btn-toggle {
     width: 8rem;
