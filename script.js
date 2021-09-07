@@ -3,7 +3,7 @@ const ham = document.querySelector('.ham');
 const xIcon = document.querySelector('.xIcon');
 const menuIcon = document.querySelector('.menuIcon');
 const main = document.querySelector('.main');
-const logo = document.querySelector('.bold');
+// const logo = document.querySelector('.bold');
 const header = document.getElementById('logo');
 const projs = document.querySelectorAll('.work');
 
