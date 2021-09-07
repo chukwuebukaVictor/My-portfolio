@@ -96,13 +96,13 @@ function addCounter() {
 
 function addSubt(modal) {
   const firstDiv = document.createElement('div');
-  // firstDiv.className = 'font500 black font18-24';
+  firstDiv.className = 'font500 black font18-24';
   modalSubt.appendChild(firstDiv);
   [firstDiv.innerHTML] = modalObj[modal].subt;
   modalObj[modal].subt.slice(1).forEach((i) => {
     addCounter();
     const otherDiv = document.createElement('div');
-    // otherDiv.className = 'gray font18-24';
+    otherDiv.className = 'gray font18-24';
     modalSubt.appendChild(otherDiv);
     otherDiv.innerHTML = i;
   });
