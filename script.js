@@ -188,3 +188,23 @@ window.onclick = function clickOut(event) {
     clearModal();
   }
 };
+
+const contactForm = document.querySelector('#contact-form');
+
+function validateEmail() {
+  const emailInput = document.querySelector('#usr-email');
+  const emailError = document.querySelector('#email-error');
+  const emailLowerCase = emailInput.value.toLowerCase();
+
+  if (emailInput.value !== emailLowerCase) {
+    emailError.innerHTML = `Your email should be in lower case please use "<span style="color:black">${emailLowerCase}</span>" instead.`;
+    return false;
+  }
+  return true;
+}
+
+contactForm.addEventListener('submit', (sub) => {
+  if (!validateEmail()) {
+    sub.preventDefault();
+  }
+});
