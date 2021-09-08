@@ -540,14 +540,13 @@ form {
   font-size: larger;
 }
 
-.inter-font{
+.inter-font {
   background-color: white;
   color: blue;
   margin: 2rem 0;
   padding: 0.2rem;
   border-radius: 0.3rem;
   font-weight: 600;
-
 }
 
 @media (min-width: 1100px) {
