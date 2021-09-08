@@ -267,10 +267,13 @@
       <section class="contact-me">
         <h3>Contact me</h3>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-        <form action="https://formspree.io/f/xdoypdnq" method="POST">
-          <input type="text" class="textfield" name="user_name" maxlength="30" required placeholder="Enter your name">
-          <input type="email" class="textfield" name="user_email" placeholder="example@gmail.com" required>
-          <textarea name="message" class="textarea" maxlength="500" placeholder="Write your message here" required></textarea>
+        <form action="https://formspree.io/f/xdoypdnq" method="POST" name="contact" id="contact-form" >
+          <input type="text" id="usr-name" class="textfield" name="user_name" maxlength="30" required placeholder="Enter your name">
+          <input type="email" id="usr-email"  class="textfield" name="user_email" placeholder="example@gmail.com" required>
+
+          <textarea name="message" id="usr-comment" class="textarea" maxlength="500" placeholder="Write your message here" required></textarea>
+          <small class="inter-font" id="email-error"></small><br>
+
           <button type="submit" class="btn-body-footer btn">Get It Touch</button>
         </form>
       </section>
