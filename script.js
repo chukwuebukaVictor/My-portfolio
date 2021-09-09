@@ -210,4 +210,10 @@ contactForm.addEventListener('submit', (sub) => {
 });
 
 const emailForm = document.getElementById('contact-email');
-con
+const textForm = document.getElementById('usr-comment');
+
+let form = {
+  user: userForm.value,
+  email: emailForm.value,
+  text: textForm.value,
+};
