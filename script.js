@@ -208,3 +208,6 @@ contactForm.addEventListener('submit', (sub) => {
     sub.preventDefault();
   }
 });
+
+const emailForm = document.getElementById('contact-email');
+con
