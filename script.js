@@ -209,7 +209,7 @@ contactForm.addEventListener('submit', (sub) => {
   }
 });
 
-const nameInput = document.getElementById('usr-name')
+const nameInput = document.getElementById('usr-name');
 const emailInput = document.getElementById('usr-email');
 const textInput = document.getElementById('usr-comment');
 
