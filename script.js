@@ -208,3 +208,36 @@ contactForm.addEventListener('submit', (sub) => {
     sub.preventDefault();
   }
 });
+
+const nameInput = document.getElementById('usr-name');
+const emailInput = document.getElementById('usr-email');
+const textInput = document.getElementById('usr-comment');
+
+function storeFormDataLocally() {
+  const formData = {
+    name: nameInput.value,
+    email: emailInput.value,
+    comment: textInput.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+nameInput.addEventListener('input', () => {
+  storeFormDataLocally();
+});
+
+emailInput.addEventListener('input', () => {
+  storeFormDataLocally();
+});
+
+textInput.addEventListener('input', () => {
+  storeFormDataLocally();
+});
+
+window.addEventListener('load', () => {
+  const data = localStorage.getItem('formData');
+  const parseData = JSON.parse(data);
+  nameInput.value = parseData.name;
+  emailInput.value = parseData.email;
+  textInput.value = parseData.comment;
+});
