@@ -209,11 +209,35 @@ contactForm.addEventListener('submit', (sub) => {
   }
 });
 
-const emailForm = document.getElementById('contact-email');
-const textForm = document.getElementById('usr-comment');
+const nameInput = document.getElementById('usr-name')
+const emailInput = document.getElementById('usr-email');
+const textInput = document.getElementById('usr-comment');
 
-let form = {
-  user: userForm.value,
-  email: emailForm.value,
-  text: textForm.value,
-};
+function storeFormDataLocally() {
+  const formData = {
+    name: nameInput.value,
+    email: emailInput.value,
+    comment: textInput.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+nameInput.addEventListener('input', () => {
+  storeFormDataLocally();
+});
+
+emailInput.addEventListener('input', () => {
+  storeFormDataLocally();
+});
+
+textInput.addEventListener('input', () => {
+  storeFormDataLocally();
+});
+
+window.addEventListener('load', () => {
+  const data = localStorage.getItem('formData');
+  const parseData = JSON.parse(data);
+  nameInput.value = parseData.name;
+  emailInput.value = parseData.email;
+  textInput.value = parseData.comment;
+});
